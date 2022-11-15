@@ -1,0 +1,221 @@
+html {
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: "Proxima Nova", 'Helvetica', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #222222;
+    width: 700px;
+    margin: 0 auto;
+}
+
+header{
+    border-bottom: 1px solid #ccc;
+    height: 80px;
+}
+
+#header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-name{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ee3322;
+    padding: 24px 0;
+}
+
+.circles{
+    display: flex;
+    right: 0;
+}
+
+.stack-circle {
+    background: #ffee00;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    transform: rotate(-30deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#quiz-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.quiz-banner{
+    height: 425px;
+    width: 700px;
+    position: relative;
+}
+.quiz-banner img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    display: flex;
+    object-fit: cover;
+}
+.quiz-text{
+    position: absolute;
+    max-width: 75%;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-family: 'Pangolin', 'Trebuchet MS', cursive;
+    font-size: 60px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+.quiz-text h1 {
+    margin: 0px;
+}
+.space{
+    height: 18px;
+}
+#author{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.title h2{
+    margin: 0;
+}
+
+#box-start{
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    margin-top: 10px;
+    text-align: center;
+}
+#box-start h2{
+    margin: 0; 
+}
+#btn-start, #btn-submit, #btn-try-again{
+    color: white;
+    padding: 18px;
+    border: none;
+}
+#btn-start, #btn-try-again{
+    background-color: #2196F3;
+}
+#btn-start:hover, #btn-try-again:hover{
+    background-color: #0d8bf2;
+    cursor: pointer;
+}
+#btn-submit{
+    background-color: #4CAF50;
+}
+#btn-submit:hover{
+    background-color: #46a049;
+    cursor: pointer;
+}
+
+#attempt{
+    position: relative;
+}
+
+.answer, .answer-r{
+	margin: 30px 0;
+}
+
+.answer-radio{
+	margin: 1px 0;
+}
+
+.option-unselected{
+  display: flex;
+  padding: 15px 45px ;
+  background-color: #f1f1f1;
+  width: auto;
+  word-break: break-all;
+}
+
+
+input{
+	position: absolute;
+    margin: 19px 15px;
+}
+
+.option-unselected:hover{
+    background-color: #ddd;
+}
+
+.option-selected,.option-correct{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    padding: 15px 180px 15px 45px ;
+    width: auto;
+}
+
+.correct-answer{
+    background-color: #d4edda;
+    padding-right: 180px;
+}
+  
+.wrong-answer {
+    background-color: #f8d7da;
+}
+
+.wrong-answer::after {
+    content: "Your answer";
+    position: absolute;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 4px;
+}
+  
+.option-correct::after,
+.correct-answer::after {
+    content: "Correct answer";
+    position: absolute;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 4px;
+}
+
+#box-submit, #box-result{
+    background-color: #f1f1f1;
+    border: 1px solid #dcdcdc;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#box-result h2{
+    font-size: 40px;
+    margin: 0;
+}
+.score{
+    font-size: 25px;
+    margin: 20px;
+}
+.review{
+    margin-bottom: 30px;
+}
+
+/* Responsive for screen 700px hay 500px */
+@media (max-width: 700px) {
+    body {
+        max-width: 95%;
+    }
+}
+@media (max-width: 500px) {
+    .circles {
+        display: none;
+    }
+}
+
+
